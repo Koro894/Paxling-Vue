@@ -1,0 +1,151 @@
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    display: flex;
+    transition: opacity 1.2s ease;
+  }
+
+
+  
+  .modal-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 1.1s ease;
+  }
+  
+  .modal-header h3 {
+    margin-top: 0;
+    color: #42b983;
+  }
+  
+  .modal-body {
+    margin: 20px 0;
+    
+  }
+  .modal-body slot input {
+    background-color: #0f291d;
+  }
+  
+  .modal-default-button {
+    position: sticky;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center; 
+
+    color: #e8e9e9;
+    height: 25px;
+    float: right;
+    margin-top: 8px;
+    width: 60%;
+    border-radius: 8px;
+    border: none;
+    background-color: #72ddad;
+    transition: all 0.7s ease;
+  }
+
+  .modal-default-button:hover{
+    transform: scale(110%);
+  }
+  .modal-default-button:active {
+    transition: all 0.03s ease;
+    transform: rotate(0.11rad);
+  }
+/*   
+  .modal-enter-from {
+    opacity: 0;
+  }
+  
+  .modal-leave-to {
+    opacity: 0;
+  } */
+  
+  .modal-enter-from .modal-container{
+    -webkit-transform: rotate3d(0, 1, 0.5, 3.142rad);
+    -moz-transform: rotate3d(0, 1, 0.5, 3.142rad);
+
+    transform: rotate3d(0, 1, 0.5, 3.142rad);
+  }
+  .modal-leave-to .modal-container {
+    -webkit-transform: scale(1.1) rotate3d(0.2, 1, 0.1, -3.142rad) translateX(150vh);
+    -moz-transform: scale(1.1) rotate3d(0.2, 1, 0.1, -3.142rad) translateX(150vh);
+    transform: scale(1.1) rotate3d(0.2, 1, 0.1, -3.142rad) translateX(150vh);
+  }
+
+
+
+/*Для создание подсказок в тексте*/
+
+[data-descr] {
+  position: relative;
+  cursor: pointer; 
+}
+
+[data-descr]::after {
+  content: attr(data-descr);
+  position: absolute;
+  left: 0;
+  top: 100%; 
+  max-width: 200px;
+  margin-top: 4px;
+  border: 2px #69bd39 solid;
+  border-radius: 10px;
+  background-color: #5ec78d;
+  padding: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  z-index: 900;
+  opacity: 0; 
+  visibility: hidden; 
+  transition: opacity 0.6s ease, visibility 0.6s ease; 
+  pointer-events: none; 
+  white-space: wrap; 
+  box-shadow: 0px 1cap 18px 0px #4eac90;
+}
+
+[data-descr]:hover::after,
+[data-descr]:focus::after {
+  opacity: 0.979; 
+  visibility: visible;
+}
+
+.modal-default-button_avtor {
+  position: sticky;
+  font-family: "Ubuntu", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center; 
+
+  color: #ffffff;
+  height: 25px;
+  float: right;
+  margin-top: 8px;
+  width: 49%;
+  border-radius: 8px;
+  border: none;
+  background-color: #56d1cb;
+  transition: all 0.7s ease;
+}
+.modal-default-button_avtor:hover{
+  transform: scale(105%);
+}
+.modal-default-button_avtor:focus {
+  transition: all 1.2s ease;
+  background-color: rgba(90, 90, 201, 0.842);
+}
+.inp_varifu {
+  width: 66%;
+  height: 1.9vh;
+  background-color:rgba(226, 255, 121, 0.664);
+  border-radius: 4px;
+  border: 2px solid #69bd39;
+}

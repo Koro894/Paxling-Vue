@@ -1,0 +1,84 @@
+.left-menu_trans {
+    margin-top: 20vh;
+    position: absolute;
+    overflow: hidden;
+    box-sizing: content-box;
+    z-index: 700;       
+    height: 60vh;
+    max-height: 332px;
+    width: 30%;
+    margin-right: 5%;
+    resize: none;
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1); /* Тень вместо контура */
+    outline: none;  
+    transition: border-color 1.2s ease, box-shadow 1.1s ease;
+    border-radius: 34px; /* Закругление углов */
+    padding: 14px; /* Отступы для текста */
+    text-align: left; /* Выравнивание текста по левому краю */
+    border: 3px solid #a7c74fda; /* Цвет рамки */
+    font-size: 26px;
+    font-family: Arial, sans-serif; 
+    opacity: 1;
+    /* background-color: rgba(221, 228, 235, 0.774);
+    border: 2px solid black; */ 
+}
+/*Скрытие полосы прокрутки*/
+
+.right-menu_trans {
+    margin-top: 20vh;
+    position: absolute;
+    z-index: 700;       
+    left: 61%;
+    margin-left: 5%;
+    height: 60vh;
+    max-height: 332px;
+    width: 30%;
+    resize: none;
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.1); /* Тень вместо контура */
+    outline: none;  
+    transition: border-color 1.2s ease, box-shadow 1.1s ease;
+    border-radius: 34px; /* Закругление углов */
+    padding: 14px; /* Отступы для текста */
+    text-align: left; /* Выравнивание текста по левому краю */
+    border: 3px solid #a7c74fda; /* Цвет рамки */
+    font-size: 26px;
+    font-family: Arial, sans-serif; 
+    opacity: 1;
+    /* background-color: rgba(221, 228, 235, 0.774);
+    border: 2px solid black; */ 
+}
+.right-menu_trans::-webkit-scrollbar {
+    display: none;
+}
+.temper_text_01 {
+    position: absolute;
+    margin-top: 690px;
+}
+.butt_perevod {
+    position: sticky;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center; 
+    color: #e3ebe0f5;
+    height: 45px;
+    float: right;
+    margin-top: 68vh;
+    margin-right: 29%;
+    width: 37%;
+    border-radius: 8px;
+    border: none;
+    background-color: #72ddad;
+    transition: all 0.7s ease;
+    font-size: 22.3px;
+    border: none;
+}
+
+.butt_perevod:hover{
+    transform: scale(110%);
+  }
+.butt_perevod:active {
+    transition: all 0.03s ease;
+    transform: rotate(0.01rad);
+}
+

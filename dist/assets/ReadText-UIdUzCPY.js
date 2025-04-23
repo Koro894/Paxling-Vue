@@ -1,0 +1,1 @@
+import{_ as n,a as s,b as t,F as r,o}from"./index-DVPp2z4s.js";const a={};function l(c,e){return o(),s(r,null,[e[0]||(e[0]=t("h1",{style:{"user-select":"none"}},"Тексты для чтения",-1)),e[1]||(e[1]=t("p",null,"Отсутствует",-1))],64)}const u=n(a,[["render",l]]);export{u as default};

@@ -1,0 +1,1 @@
+import{r,a as o,o as n}from"./index-DVPp2z4s.js";const p={__name:"Pers_Account",setup(a){return r(!1),(t,e)=>(n(),o("button",{onClick:e[0]||(e[0]=s=>t.$router.push({name:"Redaktor_Text"}))},"Редактор кода"))}};export{p as default};

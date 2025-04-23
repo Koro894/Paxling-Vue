@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Ссылка на сайт: https://fonts.google.com/selection/embed */
+
+h1 {
+    position: sticky;
+    z-index: 100;
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #4b8316; 
+    text-align: center; 
+}
+p {
+    color: #446426;
+    margin-top: 10px;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    word-break: break-all;
+  }
+
+
+    
